@@ -9,4 +9,15 @@ class Contact extends Model
 {
     /** @use HasFactory<\Database\Factories\ContactFactory> */
     use HasFactory;
+
+    protected $fillable =[
+        'contact_name'
+    ];
+
+    protected $casts = [
+        'contact_name' => 'string',
+    ];
+
+
+
 }
